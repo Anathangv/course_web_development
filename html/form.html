@@ -1,0 +1,69 @@
+<!--
+Form exercise - Intermediate HTML
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="name">First Name</label>
+		<input type="text" id="name" name="name" placeholder="Jhon" required>
+		<label for="lastName">Last Name</label>
+		<input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="other">Other</label>
+			<input type="radio" id="other" name="gender" value="other">
+		</div>
+
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Your email" required>
+			<label for="password">Password:</label>
+			<input type="password" name="password" placeholder="Password" pattern=".{5,10}" size="10" required title="Password must be between 5 to 10 characters">
+		</div>
+
+		<div>
+			<label> Birthday
+					<select name="month">
+						<option>Month</option>
+						<option>Jan</option>
+						<option>Fev</option>
+						<option>Mar</option>
+						<option>Apr</option>
+						<option>May</option>
+					</select>
+					<select name="day">
+						<option>Day</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+					</select>
+					<select name="year">
+						<option>Year</option>
+						<option>1990</option>
+						<option>1991</option>
+						<option>1992</option>
+						<option>1993</option>
+					</select>
+			</label>
+		</div>
+		<div>
+			<label>I agree to the terms and conditions</label>
+			<input type="checkbox" name="terms">
+		</div>
+		<input type="submit" value="Submit">
+	</form>	
+</body>
+</html>
